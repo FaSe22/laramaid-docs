@@ -1,0 +1,35 @@
+---
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+---
+
+<section class="container mx-auto px-4 py-8">
+    <Card className="bg-muted">
+        <CardHeader>
+            <CardTitle>Perfect For</CardTitle>
+        </CardHeader>
+        <CardContent>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+                <li><strong>Architects:</strong> Design your application structure visually</li>
+                <li><strong>Teams:</strong> Maintain consistency between design and implementation</li>
+                <li><strong>Developers:</strong> Quickly scaffold complex application structures</li>
+                <li><strong>Projects:</strong> Keep documentation and code in sync</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2">Getting Started</h3>
+            <pre class="bg-background p-2 rounded mb-4"><code>composer require fase22/laramaid</code></pre>
+
+            <h3 class="text-xl font-semibold mb-2">Why Laramaid?</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li><strong>Save Time:</strong> Eliminate repetitive boilerplate coding</li>
+                <li><strong>Maintain Consistency:</strong> Ensure your code matches your design</li>
+                <li><strong>Improve Communication:</strong> Share clear visual representations of your code</li>
+                <li><strong>Accelerate Development:</strong> Quick start with proper structure</li>
+                <li><strong>Stay Flexible:</strong> Easily modify and update both code and diagrams</li>
+            </ul>
+        </CardContent>
+    </Card>
+    <div class="mt-8 text-center">
+        <Button variant="default" size="lg">Get Started with Laramaid</Button>
+    </div>
+</section>
