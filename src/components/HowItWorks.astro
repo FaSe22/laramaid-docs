@@ -1,17 +1,18 @@
 ---
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 ---
-
-<section class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold tracking-tight mb-8 text-center">How It Works</h2>
+<section class="container mx-auto px-4 py-16 relative">
+    <h2 class="text-3xl font-bold tracking-tight mb-8 text-center bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">How It Works</h2>
     
     <div class="grid gap-6 md:grid-cols-2">
-        <Card>
+        <Card className="transition-all hover:shadow-lg hover:shadow-pink-500/10 border-pink-100/20">
             <CardHeader>
-                <CardTitle>From Diagram to Code</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">
+                    From Diagram to Code
+                </CardTitle>
             </CardHeader>
             <CardContent>
-                <pre class="bg-muted p-2 rounded"><code>php artisan laramaid diagram.md</code></pre>
+                <pre class="bg-gray-900 p-4 rounded-lg text-white"><code>php artisan laramaid diagram.md</code></pre>
                 <p class="mt-4">Takes your Mermaid class diagram and generates:</p>
                 <ul class="list-disc pl-5 mt-2 space-y-1">
                     <li>Laravel class structures</li>
@@ -23,12 +24,14 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
             </CardContent>
         </Card>
 
-        <Card>
+        <Card className="transition-all hover:shadow-lg hover:shadow-pink-500/10 border-pink-100/20">
             <CardHeader>
-                <CardTitle>From Code to Diagram</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">
+                    From Code to Diagram
+                </CardTitle>
             </CardHeader>
             <CardContent>
-                <pre class="bg-muted p-2 rounded"><code>php artisan laramaid:extract</code></pre>
+                <pre class="bg-gray-900 p-4 rounded-lg text-white"><code>php artisan laramaid:extract</code></pre>
                 <p class="mt-4">Analyzes your Laravel application and creates a comprehensive Mermaid class diagram, perfect for:</p>
                 <ul class="list-disc pl-5 mt-2 space-y-1">
                     <li>Documentation</li>
@@ -40,4 +43,5 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
         </Card>
     </div>
 </section>
+
 

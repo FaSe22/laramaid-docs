@@ -1,44 +1,57 @@
 ---
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 ---
-<section class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold tracking-tight mb-8 text-center">Key Features</h2>
+<section class="container mx-auto px-4 py-16 relative">
+    <!-- Background decoration -->
+    <div class="absolute top-1/2 right-0 w-16 h-16 rotate-45 border border-pink-200/20 rounded-xl"></div>
+    
+    <h2 class="text-3xl font-bold tracking-tight mb-8 text-center bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">Key Features</h2>
     <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <Card>
+        <Card className="transition-all hover:shadow-lg hover:shadow-pink-500/10 border-pink-100/20">
             <CardHeader>
-                <CardTitle>Bi-Directional Workflow</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">
+                    Bi-Directional Workflow
+                </CardTitle>
             </CardHeader>
             <CardContent>
                 Generate Laravel code from diagrams and extract diagrams from existing code
             </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-all hover:shadow-lg hover:shadow-pink-500/10 border-pink-100/20">
             <CardHeader>
-                <CardTitle>Complete Structure Generation</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">
+                    Complete Structure Generation
+                </CardTitle>
             </CardHeader>
             <CardContent>
                 Creates controllers, models, events, listeners, and more
             </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-all hover:shadow-lg hover:shadow-pink-500/10 border-pink-100/20">
             <CardHeader>
-                <CardTitle>Maintains Laravel Best Practices</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">
+                    Maintains Laravel Best Practices
+                </CardTitle>
             </CardHeader>
             <CardContent>
                 Follows framework conventions and coding standards
             </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-all hover:shadow-lg hover:shadow-pink-500/10 border-pink-100/20">
             <CardHeader>
-                <CardTitle>Smart Code Generation</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">
+                    Smart Code Generation
+                </CardTitle>
             </CardHeader>
             <CardContent>
                 Includes methods, properties, and proper PHP type hints
             </CardContent>
         </Card>
-        <Card>
+        <Card className="transition-all hover:shadow-lg hover:shadow-pink-500/10 border-pink-100/20">
             <CardHeader>
-                <CardTitle>Documentation Ready</CardTitle>
+                <CardTitle className="bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">
+                    Documentation Ready
+                </CardTitle>
             </CardHeader>
             <CardContent>
                 Automatically generates PHPDoc blocks for better code documentation

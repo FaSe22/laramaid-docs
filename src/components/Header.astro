@@ -1,18 +1,25 @@
 ---
 import { Button } from "@/components/ui/button"
 ---
-
-<header class="container mx-auto px-4 py-16 text-center">
-    <h1 class="text-4xl font-extrabold tracking-tight lg:text-5xl mb-4">Laramaid</h1>
-    <p class="text-xl text-muted-foreground mb-8">Seamlessly Bridge Mermaid Class Diagrams and Laravel Code</p>
-    <Button size="lg">Get Started</Button>
+<header class="relative overflow-hidden bg-gradient-to-br from-pink-500 via-purple-500 to-pink-400">
+    <div class="absolute inset-0 bg-grid-white/[0.1] bg-[size:60px_60px]"></div>
+    <!-- Floating cubes -->
+    <div class="absolute top-1/4 -left-12 w-24 h-24 rotate-12 border border-white/20 rounded-xl"></div>
+    <div class="absolute bottom-1/4 -right-12 w-24 h-24 -rotate-12 border border-white/20 rounded-xl"></div>
+    
+    <div class="container relative mx-auto px-4 py-24 text-center">
+        <h1 class="text-5xl font-extrabold tracking-tight lg:text-6xl mb-4 text-white">Laramaid</h1>
+        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Seamlessly Bridge Mermaid Class Diagrams and Laravel Code</p>
+        <Button size="lg" variant="secondary" class="bg-white text-pink-600 hover:bg-white/90">Get Started</Button>
+    </div>
 </header>
 
-<section class="container mx-auto px-4 py-8">
-    <h2 class="text-3xl font-bold tracking-tight mb-4">Transform Your Design Into Code</h2>
-    <p class="text-muted-foreground">
+<section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold tracking-tight mb-4 bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">Transform Your Design Into Code</h2>
+    <p class="text-muted-foreground text-lg">
         Convert your Mermaid class diagrams directly into fully structured Laravel applications. 
         Laramaid bridges the gap between design and implementation, saving you valuable development time.
     </p>
 </section>
+
 

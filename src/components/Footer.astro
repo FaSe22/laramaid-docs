@@ -1,21 +1,22 @@
 ---
 import { Button } from "@/components/ui/button"
 ---
-<footer class="border-t">
+<footer class="border-t border-pink-100/20 bg-gradient-to-b from-transparent to-pink-50/20">
     <div class="container mx-auto px-4 py-8 text-center">
-        <h2 class="text-2xl font-bold tracking-tight mb-4">Open Source</h2>
+        <h2 class="text-2xl font-bold tracking-tight mb-4 bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">Open Source</h2>
         <p class="text-muted-foreground mb-6">Built with love for the Laravel community. Contributions welcome!</p>
         <div class="flex justify-center space-x-4">
-            <Button variant="outline" asChild>
+            <Button variant="outline" className="border-pink-200/20 hover:bg-pink-50" asChild>
                 <a href="https://github.com/fase22/laramaid">GitHub</a>
             </Button>
-            <Button variant="outline" asChild>
+            <Button variant="outline" className="border-pink-200/20 hover:bg-pink-50" asChild>
                 <a href="https://github.com/fase22/laramaid#readme">Documentation</a>
             </Button>
-            <Button variant="outline" asChild>
+            <Button variant="outline" className="border-pink-200/20 hover:bg-pink-50" asChild>
                 <a href="https://github.com/fase22/laramaid/issues">Issues</a>
             </Button>
         </div>
     </div>
 </footer>
+
 

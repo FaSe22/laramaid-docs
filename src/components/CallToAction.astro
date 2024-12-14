@@ -2,11 +2,10 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 ---
-
-<section class="container mx-auto px-4 py-8">
-    <Card className="bg-muted">
+<section class="container mx-auto px-4 py-16">
+    <Card className="bg-gradient-to-br from-pink-50 to-purple-50 dark:from-pink-950/10 dark:to-purple-950/10 border-pink-100/20">
         <CardHeader>
-            <CardTitle>Perfect For</CardTitle>
+            <CardTitle class="text-2xl bg-gradient-to-r from-pink-600 to-purple-600 text-transparent bg-clip-text">Perfect For</CardTitle>
         </CardHeader>
         <CardContent>
             <ul class="list-disc pl-5 space-y-2 mb-6">
@@ -30,6 +29,10 @@ import { Button } from "@/components/ui/button"
         </CardContent>
     </Card>
     <div class="mt-8 text-center">
-        <Button variant="default" size="lg">Get Started with Laramaid</Button>
+        <Button size="lg" className="bg-gradient-to-r from-pink-600 to-purple-600 text-white hover:from-pink-700 hover:to-purple-700">
+            Get Started with Laramaid
+        </Button>
     </div>
 </section>
+
+
